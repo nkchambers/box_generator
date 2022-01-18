@@ -7,13 +7,10 @@ const BoxDisplay = (props) => {
 
     return (
         <fieldset>
-            <legend>DisplayBoxes.jsx</legend>
+            <legend>DisplayBoxes.jsx</legend>            
 
             <hr />
-
-            
-
-
+        
         </fieldset>
     )
 }
