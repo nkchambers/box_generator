@@ -2,16 +2,26 @@ import React from 'react'
 
 const BoxDisplay = (props) => {
     
-    //STATE VARIABLES
-    console.log(props);
+    
+/*
+    console.log(props.box);
+    console.log(props.box.color);
+    console.log(props.index);
+*/
+
+    const { box } = props
 
     return (
-        <fieldset>
-            <legend>DisplayBoxes.jsx</legend>            
+        <div style={{
+            backgroundColor: box.color,
+            height: "100px",
+            width: "100px",
+            display: "inline-block"
+        }}>
+            {box.color}<br/>
 
-            <hr />
-        
-        </fieldset>
+            <button onClick={() => props.deleteBox(props.index)}>Delete</button>
+        </div>
     )
 }
 
